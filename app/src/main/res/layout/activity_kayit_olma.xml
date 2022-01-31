@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kayitMail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8C2525"
+    tools:context=".KayitOlma">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="337dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/kayitName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kayit" />
+
+    <EditText
+        android:id="@+id/kayitName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="İsim"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="#ECE4E4"
+        app:layout_constraintBottom_toTopOf="@+id/kayitSurname"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/kayitSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="Soyad"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="#ECE4E4"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/kayitName"
+        app:layout_constraintTop_toBottomOf="@+id/kayitName" />
+
+    <EditText
+        android:id="@+id/kayitSifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="81dp"
+        android:ems="10"
+        android:hint="Şifre Belirleyiniz"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColorHint="#EDE6E6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="E-Posta "
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColorHint="#F6ECEC"
+        app:layout_constraintBottom_toTopOf="@+id/kayitSifre"
+        app:layout_constraintStart_toStartOf="@+id/kayitSurname"
+        app:layout_constraintTop_toBottomOf="@+id/kayitSurname" />
+
+    <Button
+        android:id="@+id/uyeOlButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FAEC8E47"
+        android:onClick="uyeOlButton"
+        android:text="Üye ol "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8C2525"
+    tools:context=".FoodActivity">
+
+    <Button
+        android:id="@+id/yukleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#FAEC8E47"
+        android:onClick="yukleButton"
+        android:text="Kayıt Et"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tarifText" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/d" />
+
+    <ImageView
+        android:id="@+id/resimSec"
+        android:layout_width="136dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="38dp"
+        android:onClick="resimSec"
+        app:layout_constraintBottom_toTopOf="@+id/yemekAdiText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/ic_baseline_collections_24" />
+
+    <EditText
+        android:id="@+id/yemekAdiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Yemek İsmi"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="#FAF1F1"
+        app:layout_constraintBottom_toTopOf="@+id/malzemeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resimSec" />
+
+    <EditText
+        android:id="@+id/malzemeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="Malzemeler"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="#F1EAEA"
+        app:layout_constraintBottom_toTopOf="@+id/tarifText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yemekAdiText" />
+
+    <EditText
+        android:id="@+id/tarifText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="113dp"
+        android:ems="10"
+
+        android:hint="Tarif"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:textColorHint="#F3EBEB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/malzemeText"
+        app:layout_constraintTop_toBottomOf="@+id/malzemeText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
